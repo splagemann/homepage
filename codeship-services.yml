@@ -1,0 +1,13 @@
+homepage:
+  image: httpd:2.4-alpine
+  volumes:
+    - ./:/usr/local/apache2/htdocs
+  encrypted_env_file: env.encrypted
+deploy:
+  build:
+    context: deploy
+    dockerfile: Dockerfile
+  encrypted_env_file: ssh.encrypted
+  volumes:
+    - ./:/tmp
+
