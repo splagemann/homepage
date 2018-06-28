@@ -6,8 +6,3 @@
     - name: check-vars
       service: homepage
       command: bash /usr/local/apache2/htdocs/test.sh
-- type: serial
-  steps:
-    - name: deploy
-      service: deploy
-      command: sh /tmp/deploy/deploy.sh
