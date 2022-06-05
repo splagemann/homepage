@@ -1,6 +1,0 @@
-User-agent: *
-Disallow: /owncloud/*
-Disallow: /wilken/*
-Disallow: /kegelbuch/*
-Disallow: /pediatrician/*
-Disallow: /wordpress/*

@@ -1,8 +1,0 @@
-- type: parallel
-  steps:
-    - name: check-release
-      service: homepage
-      command: cat /etc/alpine-release
-    - name: check-vars
-      service: homepage
-      command: bash /usr/local/apache2/htdocs/test.sh
