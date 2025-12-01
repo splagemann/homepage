@@ -2,119 +2,64 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <meta name="author" content="Sebastian Plagemann">
-  <meta name="description" content="personal profile of sebastian plagemann">
-  <meta name="keywords" content="sebastian, plagemann, homepage, profile">
+  <meta name="description" content="Personal profile of Sebastian Plagemann - Software Engineering Director at XING Austria GmbH">
+  <meta name="keywords" content="sebastian, plagemann, homepage, profile, xing, vienna, software engineering">
 
   <title>Sebastian Plagemann - basti.dev</title>
 
   <link rel="icon" href="img/favicon.png" type="image/png">
-
-  <style>
-    .thumbnail-rounded {
-      width: 460px;
-    }
-  </style>
-
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-  <div class="container" itemscope itemtype="http://data-vocabulary.org/Person">
-
-    <div class="text-center margin-top-l">
-      <span class="hidden" itemprop="title">Mr</span>
-      <h1 itemprop="name">Sebastian Plagemann</h1>
+  <main class="profile-card" itemscope itemtype="https://schema.org/Person">
+    
+    <img itemprop="image" src="img/me.jpg" class="profile-img" alt="Sebastian Plagemann">
+    
+    <h1 itemprop="name">Sebastian Plagemann</h1>
+    <div class="role" itemprop="jobTitle">Software Engineering Director</div>
+    
+    <div class="description">
+      <span itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+        Based in <span itemprop="addressLocality">Vienna, Austria</span>.
+      </span><br>
+      Currently helping companies to hire the best<br>with <a href="https://www.onlyfy.com" target="_blank">onlyfy</a> from <a href="https://www.xing.com" target="_blank" itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">XING</a>.
     </div>
 
-    <div class="row">
+    <div class="social-links">
+      <a href="mailto:mail@basti.dev" class="social-btn email" aria-label="Send email" title="Email Me">
+        <i class="bi bi-envelope-fill"></i>
+      </a>
+      
+      <a href="https://xing.com/profile/Sebastian_Plagemann" target="_blank" class="social-btn xing" aria-label="XING Profile" title="XING">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 64 64">
+          <path data-name="layer2" d="M24.275 14.372a2.972 2.972 0 0 0-2.6-1.7h-9.2a1.487 1.487 0 0 0-1.3.6 1.418 1.418 0 0 0 .1 1.4l6.2 10.783v.1l-9.7 17.173a1.393 1.393 0 0 0 0 1.4 1.21 1.21 0 0 0 1.2.6h9.2a2.748 2.748 0 0 0 2.5-1.8s9.6-16.973 10-17.573c-.1 0-6.4-10.983-6.4-10.983z" />
+          <path data-name="layer1" d="M61.775 1.991a1.2 1.2 0 0 0 0-1.4 1.21 1.21 0 0 0-1.2-.6h-9.3a2.748 2.748 0 0 0-2.5 1.8s-19.9 35.245-20.5 36.343c0 .1 13.1 24.062 13.1 24.062a3.057 3.057 0 0 0 2.6 1.8h9.2a1.21 1.21 0 0 0 1.2-.6 1.7 1.7 0 0 0 0-1.4l-13-23.763v-.1z" />
+        </svg>
+      </a>
 
-      <div class="col-sm-4 margin-top-l"></div>
-
-      <div class="col-sm-4 margin-top-l">
-        <img itemprop="photo" src="img/me.jpg" class="thumbnail thumbnail-rounded" alt="life">
-        <div>
-          I'm a <span itemprop="role">software engineering director</span>
-          <span itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
-            from Germany, currently living and working in <span itemprop="locality">Vienna</span>, Austria.
-            I work for <a itemprop="affiliation" href="https://www.new-work.se">New Work Austria</a>,
-            helping companies to hire the best.
-          </span>
-        </div>
-        <div class="row margin-top-md">
-          <div class="col-xs-2"><i class="bi bi-mastodon" style="font-size: 2rem;"></i></div>
-          <div class="col-xs-10">
-            send me a <a href="mailto:mail@basti.dev">mail</a> or join <a rel="me"
-              href="https://social.basti.dev/@me">mastodon</a>
-          </div>
-        </div>
-        <div class="row margin-top-sm">
-          <div class="col-xs-2"><i class="bi bi-linkedin" style="font-size: 2rem;"></i></div>
-          <div class="col-xs-10">
-            connect with me on <a href="https://xing.com/profile/Sebastian_Plagemann">xing</a> or <a
-              href="https://www.linkedin.com/in/sebastian-plagemann-b2a77268/">linkedin</a>
-          </div>
-        </div>
-        <div class="row margin-top-sm">
-          <div class="col-xs-2"><i class="bi bi-github" style="font-size: 2rem;"></i></div>
-          <div class="col-xs-10">
-            fork me on <a href="https://github.com/splagemann">github</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-sm-4 margin-top-l"></div>
-
+      <a href="https://www.linkedin.com/in/sebastian-plagemann-b2a77268/" target="_blank" class="social-btn linkedin" aria-label="LinkedIn Profile" title="LinkedIn">
+        <i class="bi bi-linkedin"></i>
+      </a>
+      
+      <a href="https://github.com/splagemann" target="_blank" class="social-btn github" aria-label="GitHub Profile" title="GitHub">
+        <i class="bi bi-github"></i>
+      </a>
     </div>
 
-  </div>
+    <footer class="footer-text">
+      &copy; Sebastian Plagemann | 1160 Vienna
+    </footer>
 
-  <footer class="footer text-center text-muted">Sebastian Plagemann, 1160 Vienna, Austria</footer>
+  </main>
 
 </body>
-
 </html>
-
-<!-- Bootstrap -->
-<link rel="stylesheet" href="css/bootstrap.css">
-<link rel="stylesheet" href="css/bootstrap-icons.css">
-
-<style>
-  body {
-    font-family: 'PT Sans', sans-serif;
-    margin-bottom: 50px;
-  }
-
-  html {
-    position: relative;
-    min-height: 100%;
-  }
-
-  .margin-top-sm {
-    margin-top: 5px;
-  }
-
-  .margin-top-md {
-    margin-top: 20px;
-  }
-
-  .margin-top-l {
-    margin-top: 50px;
-  }
-
-  .thumbnail-rounded {
-    width: 100%;
-    border-radius: 50%;
-  }
-
-  .footer {
-    position: absolute;
-    bottom: 0;
-    height: 20px;
-    width: 100%;
-  }
-</style>
